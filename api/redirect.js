@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
   const { query } = req;
   const { state, code } = query;
 
-  if (state !== "andrews-slack-status-setter") {
+  if (state !== "pks-slack-button") {
     console.error("state did not match, aborting");
     res.json({
       success: false,
