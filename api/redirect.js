@@ -40,6 +40,7 @@ module.exports = async (req, res) => {
       // LogLevel can be imported and used to make debugging simpler
       logLevel: LogLevel.DEBUG,
     });
+    res.json({ token });
     // https://eggheadio.slack.com/archives/C030CS0RL/p1613379294013000
     const conversation = await client.conversations.history({
       // The token you used to initialize your app
