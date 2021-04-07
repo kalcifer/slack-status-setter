@@ -41,7 +41,7 @@ module.exports = async (req, res) => {
       logLevel: LogLevel.DEBUG,
     });
     // https://eggheadio.slack.com/archives/C030CS0RL/p1613379294013000
-    const conversation = await app.client.conversations.history({
+    const conversation = await client.conversations.history({
       // The token you used to initialize your app
       token,
       channel: "C030CS0RL",
